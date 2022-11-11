@@ -2,38 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Order Form</title>
+    <title>Tạo Form Đơn Giản</title>
+    <!--<style>
+        Bang_1
+        {
+
+        }
+    </style> -->
 </head>
 <body>
-    <form method="get"action="simpleform.html">
-        <h2>Order Form</h2>
-        <p>What would you like to buy?</p>
-        <select>
-            <option value="  ">A</option>
-            <option>B (+ 0.5$)</option>
-            <option>C (+ 0.5$)</option>
-        </select>
-        <p>How many would you like to order?</p>
-        <input type="radio"name="rd"/> 1 - $10 <br>
-        <input type="radio"name="rd"/> 2 - $10 <br>
-        <input type="radio"name="rd"/> 3 - $10 <br>
-        <p>Name <span style="color:red">*</span> </p>
-        <input type="text" name="firstname"placeholder="FirstName" size="15"/>
-        <input type="text" name="lastname"placeholder="LastName" size="15"/>
-       <p>Email</p>
-        <input type="text" name="email"size="35"/>
-        <p>Phone number</p>
-        <input type="text" name="phone1"size="5"/>
-        <input type="text" name="phone2"size="5"/>
-        <input type="text" name="phone3"size="5"/>
-        <p><input type= "buton" name="btSubmit" value="Submit"/> </p>
-        <style>
-            .wufoo{
-                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
-            }
-        </style>
-
-        <form method="get"action="simpleform.html" class="wufoo"></form>
-    </form>
+<form action="google.com" method="get">
+    <table style="width: 500px;">
+        <tr style="height: 40px;">
+            <td style="color: white; background-color: orangered; text-align: center; font-size: x-large;" colspan="4">
+                SỞ THÍCH CỦA BẠN
+            </td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="color:blue; text-align: right; font-size: larger;">
+                <label for="y_n">Họ và tên</label>
+            </td>
+            <td style="font-size: larger;" colspan="3">
+                <input style="color: blue; width: 70%; box-shadow: -1px -1px 0 0 black; height: 20px;" type="text" id="y_n" name="your_name">
+            </td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="color:blue; text-align: right; font-size: larger;">
+                <label for="e_m">Email</label>
+            </td>
+            <td style="font-size: larger;" colspan="3>">
+                <input type="text" id="e_m" name="email" style="width: 50%; box-shadow: -1px -1px 0 0 black; height: 20px;">
+            </td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="color:blue; text-align: right; padding-bottom: 90px; font-size: larger;" rowspan="3">
+                <label>Sở thích</label>
+            </td>
+            <td style="font-size: larger;">
+                <input type="checkbox" name="hobby" id="theothao" style="box-shadow: -1px -1px 0 0 black;"><label for="theothao" style="color: orangered ;">Thể thao</label>
+            </td>
+            <td style="font-size: larger;">
+                <input type="checkbox" name="hobby" id="amnhac" style="box-shadow: -1px -1px 0 0 black;"><label for="amnhac" style="color: orangered;">Âm nhạc</label>
+            </td>
+            <td style="font-size: larger;">
+                <input type="checkbox" name="hobby" id="docsach" style="box-shadow: -1px -1px 0 0 black;"><label for="docsach" style="color: orangered;">Đọc sách</label>
+            </td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="font-size: larger;">
+                <input type="checkbox" name="hobby" id="luotweb" style="box-shadow: -1px -1px 0 0 black;"><label for="luotweb" style="color: orangered;">Lướt web</label>
+            </td>
+            <td style="font-size: larger;">
+                <input type="checkbox" name="hobby" id="choigame" style="box-shadow: -1px -1px 0 0 black;"><label for="choigame" style="color: orangered;">Chơi game</label>
+            </td>
+            <td style="font-size: larger;">
+                <input type="checkbox" name="hobby" id="dienanh" style="box-shadow: -1px -1px 0 0 black;"><label for="dienanh" style="color: orangered;">Điện ảnh</label>
+            </td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="font-size: larger;">
+                <input type="checkbox" name="hobby" id="dulich" style="box-shadow: -1px -1px 0 0 black;"><label for="dulich" style="color: orangered;">Du lịch</label>
+            </td>
+        </tr>
+        <tr style="height: 40px;">
+            <td></td>
+            <td style="font-size: larger;" colspan="3">
+                <input type="submit" name="submit" style="height: 30px;" value="Gửi thông tin">
+                <input type="reset" name="reset" style="height: 30px;" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
+
