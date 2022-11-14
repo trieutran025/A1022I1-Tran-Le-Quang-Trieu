@@ -1,0 +1,13 @@
+let inputPhysic;
+let inputChemistry;
+let inputBiology;
+inputPhysic=promp('Nhap diem ly:');
+inputChemistry=promp('Nhap diem Hoa:');
+inputBiology=promp('Nhap diem Sinh:');
+let Physic=parseInt(inputPhysic);
+let Chemsistry=parseInt(inputChemistry);
+let Biology=parseInt(inputBiology);
+let Average=(Physic+Chemsistry+Biology)/3;
+let Sum=Physic+Chemsistry+Biology;
+document.write("Average:"+Average);
+document.write("Sum"+Sum);
