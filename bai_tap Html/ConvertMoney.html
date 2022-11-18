@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ </title>
+</head>
+<body>
+<form></form>
+<table>
+    <tr>
+        <th>Amout</th>
+        <th>FromCurecy</th>
+        <th>ToCurecy</th>
+    </tr>
+    <tr>
+        <td><input type="text"id="input"></td>
+        <td>
+<select name=""id="slect1">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+        </td>
+        <td>
+</select>
+<select name=""id="slect2">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+        </td>
+<td><button onclick="doSth()">Convert</button></td>
+    </tr>
+</table>
+</body>
+<script>
+    function doSth() {
+        let giatrivao=document.getElementById('input').value;
+        let slect1=document.getElementById('slect1').value;
+        let slect2=document.getElementById('slect2').value;
+        if(slect1==slect2){
+            alert(giatrivao);
+        }
+        if(slect1=="a"&&slect2=="b"){
+            alert(giatrivao/24000);
+        }
+        if(slect1=="b"&&slect2=="a"){
+            alert(giatrivao*24000);
+        }
+    }
+</script>
+</html>
