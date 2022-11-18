@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<input type="number"id="input1">
+<input type="number"id="input2">
+<br>
+<button onclick="ADD();">Addition(+)</button>
+<button onclick="SUB();">Subtraction(-)</button>
+<button onclick="MUL();">Multiplication(*)</button>
+<button onclick="DIV();">Divíion(/)</button>
+</body>
+<script>
+    function ADD() {
+        let a=document.getElementById('input1').value;
+        let b=document.getElementById('input2').value;
+        alert(a+b);
+    }
+    function SUB() {
+        let a=document.getElementById('input1').value;
+        let b=document.getElementById('input2').value;
+        alert(a-b);
+    }
+    function MUL() {
+        let a=document.getElementById('input1').value;
+        let b=document.getElementById('input2').value;
+        alert(a*b);
+    }
+    function DIV() {
+        let a=document.getElementById('input1').value;
+        let b=document.getElementById('input2').value;
+        alert(a/b);
+    }
+</script>
+</html>
