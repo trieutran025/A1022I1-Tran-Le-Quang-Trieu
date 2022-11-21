@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="input">
+<button onclick="doSth()">Click me!</button>
+<p id="output"></p>
+<!--<input type="text" id="output">-->
+</body>
+<script>
+    function doSth() {
+        let result = +document.getElementById("input").value;
+        // document.getElementById("output").value = result;
+        document.getElementById("output").innerText = typeof result;
+    }
+
+    // let number = 1;
+    // let name = "a1022I1";
+    // let isDeleted = true;
+    // let any;
+    // let any2 = null;
+    // Các cách để ép chuỗi số sang số.
+    // let result1 = parseInt(prompt("Nhập gì đó vào đây"));
+    // let result2 = parseFloat(prompt("Nhập gì đó vào đây"));
+    // let result3 = +prompt("Nhập số vào đây");
+    // document.write("result 1: " + result1 + ". Result2: " + result2 +
+    //     "Result3: " + result3);
+    // document.write(typeof result);
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="doSth()">Click me</button>
+
+<p id="output"></p>
+<p id="output2"></p>
+</body>
+<script>
+    // alert("hello world");
+
+    // confirm("Bạn có chắc chắn muốn xóa:..");
+
+    // let name = prompt('Nhập tên vào đây: ', 'Nguyễn Thanh Công');
+    // alert(name);
+
+    // log + tab -> console.log
+    // console.log("A1022I1");
+    // function doSth(){
+    //     document.write("A1022I1");
+    // }
+
+    /*
+   * Function dùng để làm gì
+   * Tham số truyền vào là gì ?
+   * Dữ liệu trả về là gì
+   * Người tạo
+   * Ngày tạo*/
+   let count= 1;
+    function doSth() {
+        if(count % 2 === 0){
+            document.getElementById("output").innerHTML =
+                "";
+            document.getElementById("output2").innerText = "";
+            count++;
+        }else {
+            document.getElementById("output").innerHTML =
+                "<table border='1'>" +
+                "<tr><td>1</td></tr>"+
+                "<tr><td>2</td></tr>"+
+                "<tr><td>3</td></tr>"+
+                "</table>";
+            document.getElementById("output2").innerText = "<p style='color: red'>A1022I1</p>";
+            count++;
+        }
+
+    }
+
+</script>
+</html>

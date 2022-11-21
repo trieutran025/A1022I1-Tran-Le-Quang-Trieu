@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p onmouseover="changeColor()" onmouseout="changeColor1()" id="text">Hello Các bạn</p>
+<input type="text" oninput="doSth()" onchange="doSth()" id="input">
+<p id="output"></p>
+</body>
+<script>
+    function changeColor() {
+        document.getElementById("text").style.color ="red";
+    }
+    function changeColor1() {
+        document.getElementById("text").style.color ="black";
+    }
+    function doSth() {
+        //ctrl + space
+        document.getElementById("output").innerText = document.getElementById("input").value;
+    }
+</script>
+</html>
