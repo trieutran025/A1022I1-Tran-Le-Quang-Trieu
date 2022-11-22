@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Thuế cá nhân theo thang </title>
 </head>
 <body>
-
 </body>
+<script>
+    let thueSuat;
+    let luong,sothue,luongRong=0;
+    let bac1=5/100,bac2=10/100,bac3=15/100,bac4=20/100,bac5=25/100,bac6=30/100,bac7=35/100;
+    let tienmienthue,tiengiamtru;
+    luong=+prompt("Số tiền lương:");
+    tienmienthue=+prompt("Số tiền được miễn thuế:");
+    tiengiamtru=+prompt("Số tiền được giảm trừ:");
+    sothue=luong-tiengiamtru-tiengiamtru;
+    if(luong<=5000000){
+        thueSuat=bac1;
+        luongRong=sothue*thueSuat;
+    }
+    else if(luong<=10000000){
+        thueSuat=bac2;
+        luongRong=sothue*thueSuat;
+    }
+    else if(luong<=18000000){
+        thueSuat=bac3;
+        luongRong=sothue*thueSuat;
+    }
+    else if(luong<=32000000){
+        thueSuat=bac4;
+        luongRong=sothue*thueSuat;
+    }
+    else if(luong<=52000000){
+        thueSuat=bac5;
+        luongRong=sothue*thueSuat;
+    }
+    else if(luong<=80000000){
+        thueSuat=bac6;
+        luongRong=sothue*thueSuat;
+    }
+    else {
+        thueSuat=bac7;
+        luongRong=sothue*thueSuat;
+    }
+    if(luongRong<0){
+        alert("Không cần nộp thuế")
+    }
+    else{
+        alert("Số tiền thuế phải nộp"+luongRong);
+    }
+</script>
 </html>
