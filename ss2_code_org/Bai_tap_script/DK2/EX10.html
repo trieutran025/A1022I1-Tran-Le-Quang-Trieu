@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Electricity bill</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let soDien=+prompt("Nhap so Dien:");
+    let tienDien;
+    let Bac1=1678,Bac2=1734,Bac3=2014,Bac4=2536,Bac5=2834,Bac6=2927;
+    if(soDien<0){
+        document.write("Vui lòng nhập lại");
+    }
+    if(soDien<=50){
+        tienDien=soDien*Bac1;
+    }
+    else if(soDien<=100){
+        tienDien=50*Bac1+((soDien-50)*Bac2);
+    }
+    else if(soDien<=200) {
+        tienDien = (50 * Bac1) + (50 * Bac2) + ((soDien - 100) * Bac3);
+    }
+    else if(soDien<=300) {
+        tienDien = (50 * Bac1) + (50 * Bac2) + (100 * Bac3) + ((soDien - 200) * Bac4);
+    }
+    else if(soDien<=400) {
+        tienDien = (50 * Bac1) + (50 * Bac2) + (100 * Bac3) + (100 * Bac4) + ((soDien - 300) * Bac5);
+    }
+    else if(soDien>400){
+        tienDien= (50 * Bac1)+(50 * Bac2)+(100 * Bac3)+(100 * Bac4)+(100 * Bac5)+((soDien - 400)*Bac6);
+    }
+    document.write(tienDien);
+</script>
 </html>

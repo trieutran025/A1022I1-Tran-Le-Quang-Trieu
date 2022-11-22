@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>First degree equation</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let a=prompt("Enter a:");
+    let b=prompt("Enter b:");
+    if(a==0){
+        alert("Phương trình vô nghiệm ");
+    }
+    else if(b==0){
+        document.write("Phương trình vô số nghiệm")
+    }
+    else {
+        x=-b/a;
+        document.write(a+"x"+"+"+b+"= 0");
+        document.write("<br> x = "+x);
+    }
+
+</script>
 </html>
