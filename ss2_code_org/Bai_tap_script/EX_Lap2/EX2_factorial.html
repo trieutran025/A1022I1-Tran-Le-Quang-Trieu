@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+</body>
+<script>
+    let number=+prompt("Nhập số nguyên dương cần tính giai thừa:");
+    let fac=1;
+    if(number>0) {
+        while (number >=1) {
+            fac = fac * number;
+            number--;
+        }
+        alert(fac)
+    }
+    else{
+        alert("Vui lòng nhập đúng số nguyên dương!");
+    }
+</script>
+</html>
