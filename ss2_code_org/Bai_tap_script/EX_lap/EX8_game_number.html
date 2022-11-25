@@ -5,8 +5,35 @@
     <title>Game Doan so</title>
 </head>
 <body>
-<script>
-    
-</script>
+    <button onclick="game()"id="play">Chơi</button>
 </body>
+<script>
+    function game() {
+        let check=Math.floor(Math.random()*100);
+        let count=0;
+        do{
+            let number=+prompt("Mời bạn đoán số");
+            if(number===check){
+                alert("Correct!");
+                document.querySelector("button").disabled = true;
+                break;
+            }
+            else{
+                count++;
+                if(number<check){
+                    alert("Số này bé hơn");
+                }
+                if(number>check){
+                    alert("Số này lớn hơn");
+                }
+                if(count<3) {
+                    alert("Mời Bạn Thử lại !");
+                }
+            }
+        }while (count!=3);
+        alert("Trò Chơi kết thúc");
+        document.querySelector("button").disabled = true;
+    }
+
+</script>
 </html>
