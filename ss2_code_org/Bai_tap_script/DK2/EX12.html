@@ -7,11 +7,12 @@
 <body>
 </body>
 <script>
-    let tienBd=+prompt("Nhập số tiền vay:");
-    let month=+prompt("Số tháng cho vay:");
-    let laisuat=+prompt("Lãi suất hàng tháng :");
-   let trmonth=(laisuat*tienBd)/month;
-   alert("So tien phai tra hang thang la"+trmonth);
+    let tienBd=+prompt("Nhập số vốn ban đầu:");
+    let month=+prompt("Số tháng cho gửi :");
+    let laisuat=+prompt("Lãi suất  :");
+    laisuat=laisuat/100;
+   let trmonth=tienBd*(Math.pow(1+(laisuat),month))-tienBd;
+   alert("So tien lai hang thang nhan la:"+trmonth);
 
 </script>
 </html>
