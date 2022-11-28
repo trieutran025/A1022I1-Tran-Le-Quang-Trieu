@@ -9,13 +9,13 @@
 </body>
 <script>
     function game() {
-        let check=Math.floor(Math.random()*100);
+        let d=+prompt("Nhap khoang muon doan");
+        let check=Math.floor(Math.random()*d);
         let count=0;
         do{
             let number=+prompt("Mời bạn đoán số");
             if(number===check){
                 alert("Correct!");
-                document.querySelector("button").disabled = true;
                 break;
             }
             else{
@@ -23,17 +23,15 @@
                 if(number<check){
                     alert("Số này bé hơn");
                 }
-                if(number>check){
+                else if(number>check){
                     alert("Số này lớn hơn");
                 }
                 if(count<3) {
                     alert("Mời Bạn Thử lại !");
                 }
             }
-        }while (count!=3);
-        alert("Trò Chơi kết thúc");
-        document.querySelector("button").disabled = true;
+        }while (count<=3);
+        alert("Trò chơi kết thúc");
     }
-
 </script>
 </html>
