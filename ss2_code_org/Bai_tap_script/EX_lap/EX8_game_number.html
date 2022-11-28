@@ -9,7 +9,7 @@
 </body>
 <script>
     function game() {
-        let d=+prompt("Nhap khoang muon doan");
+        let d=+prompt("Nhap khoang muon doan:");
         let check=Math.floor(Math.random()*d);
         let count=0;
         do{
@@ -27,7 +27,7 @@
                     alert("Số này lớn hơn");
                 }
                 if(count<3) {
-                    alert("Mời Bạn Thử lại !");
+                    alert("Mời Bạn Thử lại!");
                 }
             }
         }while (count<=3);
