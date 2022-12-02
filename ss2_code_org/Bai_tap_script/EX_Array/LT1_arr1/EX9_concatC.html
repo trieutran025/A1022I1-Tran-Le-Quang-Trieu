@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gộp mảng a b vào c</title>
+</head>
+<body>
+</body>
+<script>
+    let a=[];
+    let b=[];
+    for (let i = 0; i <10 ; i++) {
+        a[i]=+prompt("Mời nhập giá trị phần tử thứ "+i+"Của mảng a:");
+    }
+    for (let i = 0; i <10 ; i++) {
+        b[i]=+prompt("Mời nhập giá trị phần tử thứ "+i+"Của mảng b:");
+    }
+    let c=a.concat(b);
+    document.write(c);
+</script>
+</html>
