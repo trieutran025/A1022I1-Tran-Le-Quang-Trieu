@@ -7,7 +7,12 @@
 <body>
 </body>
 <script>
-    let arr=['c','s','c','2','6','1'];
-    document.write(arr.reverse().join(""));
+    let arr=[];
+    let n=+prompt("Nhập kích thước mảng")
+    for (let i = 0; i <n ; i++) {
+        arr[i]=prompt("Nhập giá trị phần tử thứ "+i);
+    }
+    let results=arr.reverse();
+    document.write(results.join(""));
 </script>
 </html>
