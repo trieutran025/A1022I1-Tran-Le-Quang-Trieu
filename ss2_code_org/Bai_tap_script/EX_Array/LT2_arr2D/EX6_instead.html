@@ -8,11 +8,15 @@
 </body>
 <script>
     let a=[];
-    a=prompt("Nhập một chuỗi vào đây");
-    a.toString();
-    for (let i = 0; i <a.length ; i++) {
-
+    let n=+prompt("Kích thước của mảng")
+    for (let i = 0; i <n ; i++) {
+        a[i]=prompt("Nhập ký tự");
     }
-    document.write(b);
+    for (let i = 0; i <n ; i++) {
+        if(a[i]=="-"){
+            a[i]="_";
+        }
+    }
+    document.write(a.join(""));
 </script>
 </html>
