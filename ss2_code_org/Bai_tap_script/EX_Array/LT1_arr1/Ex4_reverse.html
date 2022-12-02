@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược các phần tử</title>
+</head>
+<body>
+</body>
+<script>
+    let numbers=[100];
+    let n=+prompt("Nhập số phần tử trong mảng:")
+    for (let i = 0; i <n ; i++) {
+        numbers[i]=+prompt("Nhập giá trị phần tử thứ "+i);
+    }
+    document.write(numbers.reverse().join());
+</script>
+</html>

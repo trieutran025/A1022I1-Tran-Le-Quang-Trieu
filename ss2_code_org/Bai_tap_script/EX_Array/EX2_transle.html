@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text"id="txt">
+<button type="button"id="search"value="add"onclick="Search()">Tìm Kiếm</button>
+<div id="resurt"></div>
+</body>
+<script>
+   function Search() {
+        let c=document.getElementById('txt').value;
+        let tA=["One","Two","Zero","Love","Academy","College","Book"];
+        let tV=["Một","Hai","Không","Yêu","Học viện","Cao đẳng","Sách"];
+        let e="<hr>"
+       for (let i = 0; i < tA.length; i++) {
+           if(c==tA[i]){
+               e=tA[i]+":"+tV[i];
+           }
+       }
+       document.getElementById("resurt").innerHTML=e;
+   }
+
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra V và Xóa V khỏi mảng</title>
+</head>
+<body>
+</body>
+<script>
+    let arr=[];
+    for (let i = 0; i <10 ; i++) {
+        arr[i]=+prompt("Nhập giá trị phần tử thứ "+i);
+    }
+    let V=+prompt("Nhập giá trị V:");
+    let c=arr.indexOf(V);
+    if(arr.includes(V)){
+        arr.splice(c,1);
+    }
+    document.write(arr);
+</script>
+</html>

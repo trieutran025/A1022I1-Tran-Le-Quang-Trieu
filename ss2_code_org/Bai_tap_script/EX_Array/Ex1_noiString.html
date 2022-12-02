@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noi chuoi</title>
+</head>
+<body>
+</body>
+<script>
+    //Bai 1:
+    document.write("<br>"+"Bai 1:<br>");
+    let myColor=["Red","Green","White","Black"];
+    document.write(myColor.join());
+    //Bai 2:
+    document.write("<br>"+"Bai 2:<br>");
+    const numbers=window.prompt();
+    const str=numbers.toString();
+    const result=[str[0]];
+    for (let i = 1; i <str.length ; i++) {
+        if((str[i-1])%2==0&&(str[i]%2==0)){
+            result.push('-',str[i]);
+        }
+        else {
+            result.push(str[i]);
+        }
+    }
+    document.write(result.join(''));
+    //Bai 3:
+    document.write("<br>Bai 3: <br>");
+    let a=prompt("Enter String:");
+    let b=a;
+    for(let i=0;i<a.length;i++){
+        if(a[i]==a[i].toUpperCase(a)){
+            document.write(a[i].toLowerCase(a));
+        }
+        else{
+            document.write(a[i].toUpperCase(a));
+        }
+    }
+</script>
+</html>

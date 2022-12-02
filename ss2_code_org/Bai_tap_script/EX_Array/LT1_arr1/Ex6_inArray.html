@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra V có trong mảng</title>
+</head>
+<body>
+</body>
+<script>
+    let arr=[];
+    let i;
+    for ( i = 0; i <10 ; i++) {
+        arr[i]=+prompt("Nhập giá trị phần tử thứ "+i);
+    }
+    let V=+prompt("Mời bạn nhập giá trị V");
+    if(arr.includes(V)){
+        document.write("V is in Array");
+    }
+    else{
+        document.write("V is not in Array");
+    }
+</script>
+</html>

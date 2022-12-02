@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị trung bình của mảng</title>
+</head>
+<body>
+</body>
+<script>
+    let arr=[100];
+    let S=0;
+    let tB=0;
+    let n=+prompt("Nhập số phần tử của mảng");
+    for (let i = 0; i <n ; i++) {
+        arr[i]=+prompt("Nhập giá trị phần tử thứ "+i);
+        S+=arr[i];
+    }
+    tB=S/n;
+    document.write("Giá trị trung bình của mảng là "+tB);
+</script>
+</html>
