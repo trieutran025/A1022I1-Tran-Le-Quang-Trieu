@@ -8,13 +8,18 @@
 </body>
 <script>
     let a=prompt("Nhập chuỗi vào đây:");
-    let count=1;
+    let count;
+    if(a==""){
+        count=0;
+    }
+    else{
+        count=1;
     for (let i = 0; i <a.length ; i++) {
         if(a[i]===" "){
             count++;
         }
     }
+    }
     document.write("Số từ có trong chuỗi là :"+count);
-
 </script>
 </html>
