@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    arr=[1,2,3,4,"a","b","c","d",13,212,1,1,1,1]
+    function countCharInArray(c) {
+        let dem=0;
+        for (let i = 0; i <arr.length ; i++) {
+            if(c==arr[i]){
+                dem++;
+            }
+        }
+        if(dem===0){
+            return -1;
+        }
+        return dem;
+    }
+    let ch=prompt("Nhập kí tự muốn tìm");
+    let result=countCharInArray(ch);
+    if(countCharInArray(ch)){
+        document.write("Số lượng kí tự có trong mảng:"+result);
+    }
+</script>
+</body>
+</html>

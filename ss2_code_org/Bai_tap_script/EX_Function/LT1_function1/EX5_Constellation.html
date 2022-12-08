@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrStars=["Polaris","Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" ,"Regulus"];
+    let arrConstellation=["Ursa" ,"Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa" ,"Major" ,"Leo"]
+    function checkStarsInConstellation(arr) {
+        for (let i = 0; i <arrStars.length ; i++) {
+            if(arr===arrStars[i]){
+                return arrConstellation[i];
+            }
+        }
+    }
+    let arrStar=prompt("Ngôi sao muốn tìm:");
+    let result=checkStarsInConstellation(arrStar);
+    if(checkStarsInConstellation(arrStar)) {
+        document.write("Chòm sao tương ứng với ngôi sao:" + result);
+    }
+    else{
+        document.write("Không có ngôi sao này trong mảng:")
+    }
+</script>
+</body>
+</html>
