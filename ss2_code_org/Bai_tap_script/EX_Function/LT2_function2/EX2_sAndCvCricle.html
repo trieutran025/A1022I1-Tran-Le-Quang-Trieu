@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<script>
+    const PI=3.14;
+    function areaCricle(r) {
+        return (PI*Math.pow(r,2));
+    }
+    function perimeterCreicle(r) {
+        return (PI*2*r);
+    }
+    let r=+prompt("Nhập bán kính r:");
+    let area=areaCricle(r);
+    let perimeter=perimeterCreicle(r);
+    document.write("Diện tích hình tròn:"+area);
+    document.write("<br>Chu Vi hình tròn:"+perimeter);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ký tự nhập vào là số</title>
+</head>
+<body>
+<script>
+    function ktrNumber(num) {
+        if(num%num==0){
+            return num;
+        }
+    }
+    let number=prompt("Nhập kí tự :");
+    let result=ktrNumber(number);
+    if(ktrNumber(number)){
+        document.write("kí tự  vừa nhập là số:"+result);
+    }
+    else{
+        document.write("Kí tự nhập vào không phải là số!");
+    }
+</script>
+</body>
+</html>

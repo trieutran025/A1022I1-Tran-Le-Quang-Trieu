@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+<script>
+    function isPrime(n) {
+        if (n > 1) {
+            let dem = 0;
+            for (let i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    dem++;
+                }
+            }
+            return (dem == 2);
+        }
+    }
+    let number=+prompt("Enter number:");
+    if(isPrime(number)){
+        document.write(number+" la so nguyen to");
+    }
+    else{
+        document.write(number+" khong la so nguyen to");
+    }
+</script>
+</body>
+</html>
