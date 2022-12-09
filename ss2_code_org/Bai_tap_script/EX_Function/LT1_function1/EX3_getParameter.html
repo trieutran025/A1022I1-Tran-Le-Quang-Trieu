@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function parameter(a,b) {
+    function enterParameter(a,b) {
         if(a>b){
             alert("Số thứ nhất lớn hớn số thứ hai");
         }
@@ -16,9 +16,9 @@
     }
     let number1=+prompt("Nhập số thứ nhất:");
     let number2=+prompt("Nhập số thứ hai:");
-    let result=parameter(number1,number2);
-    if(parameter(number1,number2)){
-        document.write("Tổng hai số :"+result);
+    let result=enterParameter(number1,number2);
+    if(enterParameter(number1,number2)){
+        document.write("Tổng của hai tham số: "+result);
     }
 </script>
 </body>
