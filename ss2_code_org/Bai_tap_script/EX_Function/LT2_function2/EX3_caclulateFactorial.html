@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function factoral(n) {
+    function calculateFactoral(n) {
         let result=1;
         for(let i=1;i<=n;i++){
             result*=i;
@@ -14,7 +14,7 @@
         return result;
     }
     let number=+prompt("Enter number :");
-    let total=factoral(number);
+    let total=calculateFactoral(number);
     document.write("Giai thừa của "+number+": "+total);
 </script>
 </body>

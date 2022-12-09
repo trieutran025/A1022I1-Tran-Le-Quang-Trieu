@@ -6,19 +6,14 @@
 </head>
 <body>
 <script>
-    function ktrNumber(num) {
+    function isNumber(num) {
         if(num%num==0){
-            return num;
+            return true;
         }
     }
     let number=prompt("Nhập kí tự :");
-    let result=ktrNumber(number);
-    if(ktrNumber(number)){
-        document.write("kí tự  vừa nhập là số:"+result);
-    }
-    else{
-        document.write("Kí tự nhập vào không phải là số!");
-    }
+    let result=isNumber(number);
+    document.write(result);
 </script>
 </body>
 </html>

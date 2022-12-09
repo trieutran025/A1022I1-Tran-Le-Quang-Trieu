@@ -7,15 +7,13 @@
 <body>
 <script>
     function checkNumberInteger(num) {
-        return (num>0);
+        if(num>0){
+            return true;
+        }
     }
     let number=+prompt("Enter number:");
-    if(checkNumberInteger(number)){
-        document.write(number+" là số nguyên dương");
-    }
-    else {
-        document.write(number+" không phải là số nguyên dương");
-    }
+    let result=checkNumberInteger(number);
+    document.write(result);
 </script>
 </body>
 </html>

@@ -7,15 +7,15 @@
 <body>
 <script>
     const PI=3.14;
-    function areaCricle(r) {
+    function calculateAreaCricle(r) {
         return (PI*Math.pow(r,2));
     }
-    function perimeterCreicle(r) {
+    function calculatePerimeterCreicle(r) {
         return (PI*2*r);
     }
     let r=+prompt("Nhập bán kính r:");
-    let area=areaCricle(r);
-    let perimeter=perimeterCreicle(r);
+    let area=calculateAreaCricle(r);
+    let perimeter=calculatePerimeterCreicle(r);
     document.write("Diện tích hình tròn:"+area);
     document.write("<br>Chu Vi hình tròn:"+perimeter);
 </script>
