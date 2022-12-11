@@ -6,22 +6,22 @@
 </head>
 <body>
 <script>
-    let arrStars=["Polaris","Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" ,"Regulus"];
-    let arrConstellation=["Ursa" ,"Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa" ,"Major" ,"Leo"]
+
     function checkStarsInConstellation(arr) {
-        for (let i = 0; i <arr.length ; i++) {
-            if(arr===arrStars[i]){
-                return arrConstellation[i];
-            }
+        if(arrStars.includes(star)){
+            let num=arrStars.indexOf(star)
+            return arrConstellation[num];
         }
     }
+    let arrStars=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+    let arrConstellation=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" ,"Leo"]
     let star=prompt("Ngôi sao muốn tìm:");
     let result=checkStarsInConstellation(star);
     if(checkStarsInConstellation(star)) {
         document.write("Chòm sao tương ứng với ngôi sao:" + result);
     }
     else{
-        document.write("Không có ngôi sao này trong mảng:")
+        document.write("Không có ngôi sao này trong mảng.")
     }
 </script>
 </body>
