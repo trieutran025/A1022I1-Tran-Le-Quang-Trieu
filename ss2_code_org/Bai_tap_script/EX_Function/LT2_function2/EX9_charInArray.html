@@ -6,7 +6,11 @@
 </head>
 <body>
 <script>
-    arr=[1,2,3,4,"a","b","c","d",13,212,1,1,1,1]
+    let n=+prompt("Nhập chiều dài của mảng")
+    let arr=[];
+    for (let i = 0; i <n ; i++) {
+        arr[i]=prompt("Nhập kí tự thứ  "+i+" :");
+    }
     function countCharInArray(c) {
         let dem=0;
         for (let i = 0; i <arr.length ; i++) {
@@ -19,7 +23,7 @@
         }
         return dem;
     }
-    let ch=prompt("Nhập kí tự muốn tìm");
+    let ch=prompt("Nhập kí tự muốn tìm:");
     let result=countCharInArray(ch);
     if(countCharInArray(ch)){
         document.write("Số lượng kí tự có trong mảng:"+result);
